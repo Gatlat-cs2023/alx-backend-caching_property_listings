@@ -76,14 +76,15 @@ WSGI_APPLICATION = 'alx_backend_caching_property_listings.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'alx_airbnb_database',
-        'USER': 'root',
-        'PASSWORD': 'Faithoverfear@1998',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'property_db',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',  # or 'postgres' if using Docker
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
